@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.bac {
+    background-image: url("assets/images/background.png");
+}
