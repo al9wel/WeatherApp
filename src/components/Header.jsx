@@ -14,8 +14,7 @@ const Header = () => {
                             </h1>
                             <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl leading-relaxed mx-auto">
                                 Experince weather like never before with real-time data,
-                                beatiful visuals, and precise forecasts for any location
-                                worldwide
+                                beatiful visuals
                             </p>
                         </div>
                     </div>
