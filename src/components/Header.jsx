@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ language }) => {
     return (
         <>
             <div className=" bac absolute inset-0 bg-cover bg-center bg-no-repeat ">
@@ -12,9 +12,8 @@ const Header = () => {
                             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-2xl tracking-tight">
                                 Weather <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">App</span>
                             </h1>
-                            <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl leading-relaxed mx-auto">
-                                Experince weather like never before with real-time data,
-                                beatiful visuals
+                            <p className="text-white/100 text-lg md:text-xl mb-8 max-w-2xl leading-relaxed mx-auto">
+                                {language == "en" ? "Experince weather like never before with real-time data,beatiful visuals" : "عِش تجربة طقس لا مثيل لها مع بيانات فورية ورسوميات ساحرة!"}
                             </p>
                         </div>
                     </div>
