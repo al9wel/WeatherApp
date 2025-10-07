@@ -9,6 +9,12 @@ Users can search for any city and instantly get **current weather data**, with *
 
 ---
 
+## 📍Live Demo
+
+- https://al9wel-9.netlify.app/
+
+---
+
 ## 🚀 Features
 
 - 🔍 **City Search** – Search for any city worldwide.
