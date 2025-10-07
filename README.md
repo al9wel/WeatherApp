@@ -43,7 +43,7 @@ This app demonstrates how to:
 ## 📁 Project Structure
 
 ```
-📦 react-todolist
+📦 WeatherApp
  ┣ 📂 src
  ┃ ┣ 📂 assets                   # images,fonts...etc
  ┃ ┣ 📂 components               # Reusable components
