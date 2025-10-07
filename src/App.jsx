@@ -52,10 +52,15 @@ const App = () => {
     handleLanguageChange()
   }, [])
   useEffect(() => {
+    const controller = new AbortController()
     setLoader(true)
     const getWeatherData = async () => {
       try {
-        const response = await fetch(`${API_URL}/weather?q=${city}&appid=${API_KEY}`);
+        const response = await fetch(`${API_URL}/weather?q=${city}&appid=${API_KEY}`,
+          {
+            signal: controller.signal
+          }
+        );
         const data = await response.json()
         if (!response.ok) {
           setLoader(false)
@@ -73,6 +78,9 @@ const App = () => {
       }
     }
     getWeatherData()
+    return () => {
+      controller.abort()
+    }
   }, [city])
   return (
     <>
