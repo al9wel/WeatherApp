@@ -55,7 +55,7 @@ const App = () => {
     const controller = new AbortController()
     setLoader(true)
     const getWeatherData = async () => {
-      const BASE_URL = import.meta.env.VITE_BASE_URL;
+      const BASE_URL = "https://api.openweathermap.org/data/2.5"
       const API_KEY = import.meta.env.VITE_API_KEY;
       try {
         const response = await fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}`,
@@ -82,7 +82,6 @@ const App = () => {
     getWeatherData()
     return () => {
       controller.abort()
-      console.log("hhh")
     }
   }, [city])
   return (
