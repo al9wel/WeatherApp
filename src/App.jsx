@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Header from './components/Header'
 import Weather from './components/Weather'
 import './index.css'
 import Swal from 'sweetalert2'
@@ -86,8 +85,14 @@ const App = () => {
   }, [city])
   return (
     <>
-      <div className="flex items-center justify-center flex-col h-screen">
-        <Header language={language} />
+      <div className="flex items-center justify-center flex-col min-h-screen bg-black background">
+        <div className=' absolute inset-0 bg-gradient-to-br from-blue-900/40 via-purple-900/30 to-indigo-900/40'></div>
+        <h1 className="text-5xl md:text-7xl font-bold text-white my-6 drop-shadow-2xl tracking-tight">
+          Weather <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">App</span>
+        </h1>
+        <p className="text-white z-30 text-center text-lg md:text-xl mb-8 max-w-2xl leading-relaxed mx-auto">
+          {t("Experince weather like never before with real-time data,beatiful visuals")}
+        </p>
         <Weather t={t} language={language} handleLanguageChange={handleLanguageChange} data={data} handleCityChange={handleCityChange} />
         <ClipLoader size={80} color='#ffffff' className='z-20 absolute mt-40' loading={loader} />
       </div>
