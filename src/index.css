@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .background {
-    background-image: url('https://i.pinimg.com/originals/bd/72/d1/bd72d10c741dde2ce2684577ffa0d86f.gif');
+    background-image: url('./assets/images/weatherBG.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
