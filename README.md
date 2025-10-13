@@ -5,7 +5,7 @@ Users can search for any city and instantly get **current weather data**, with *
 
 ---
 
-![Weather App Preview](https://i.imgur.com/MPLdK2y.png)
+![Weather App Preview](https://i.imgur.com/75yuteE.png)
 
 ---
 
